@@ -1,0 +1,2 @@
+rootProject.name='Ex40SQLiteDatabase'
+include ':app'

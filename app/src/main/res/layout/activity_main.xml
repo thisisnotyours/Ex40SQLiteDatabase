@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5D6FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Base"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input name"
+        android:inputType="text"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input age"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input email"
+        android:inputType="textEmailAddress"/>
+
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickInsert"/>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Select all"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickSelectAll"/> <!--Select all  =모든 데이터 가져오기-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Select by name"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickSelectByName"/>  <!--데이터에서 '이름'만 가져오기-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Update by name"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickUpdateByName"/> <!--데이터에서 이름만 변경하기/업데이트 하기-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Delete by name"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickDelete"/>  <!--데이터에서 이름만? 삭제하기-->
+
+
+</LinearLayout>
